@@ -1,0 +1,11 @@
+name: CleanTPA
+version: 1.0
+main: me.cleantpa.CleanTPA
+api-version: 1.21
+commands:
+  tpa:
+  tpahere:
+  tpaccept:
+  tpdeny:
+  tpcancel:
+  tpatoggle:
