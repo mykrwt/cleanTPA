@@ -1,0 +1,62 @@
+# LightningTPA Configuration File
+# Version 1.0.0
+
+# Teleport warmup time in seconds
+warmup-seconds: 5
+
+# PvP cooldown duration in seconds (when player deals or receives damage)
+pvp-cooldown-seconds: 20
+
+# TPA request expiry time in seconds
+request-expiry-seconds: 60
+
+# Enable sound effects for TPA actions
+sounds-enabled: true
+
+# Message Configuration (use & for color codes)
+messages:
+  # TPA Command Messages
+  request-sent: "&6➤ &eRequest sent to &b%target%&e."
+  request-received: "&6➤ &b%sender% &easked to teleport. &7/tpaccept &eor &7/tpdeny"
+  request-accepted: "&a✔ &eTeleport accepted, stand still…"
+  request-denied: "&c✖ &eRequest denied."
+  
+  # Request State Messages
+  request-expired: "&c⌛ Request expired."
+  no-pending-request: "&cYou have no pending request."
+  already-sent-request: "&cYou already sent a request."
+  player-not-found: "&cPlayer not found."
+  cannot-tpa-yourself: "&cYou cannot TPA to yourself."
+  no-permission: "&cYou don't have permission to use this command!"
+  
+  # PvP Cooldown Messages
+  sender-in-combat: "&cYou are in combat – wait %time%s."
+  target-in-combat: "&c%target% is in combat, try later."
+  combat-action-bar: "❌ PvP cooldown – wait %time%ss"
+  
+  # Teleport Messages
+  teleport-cancelled: "&cTeleport cancelled."
+  teleport-warmup: "Teleporting in %time%"
+  
+  # Home Messages
+  home-set: "&aHome '%home%' set successfully."
+  home-deleted: "&cHome '%home%' deleted."
+  home-not-found: "&cHome '%home%' not found."
+  home-name-invalid: "&cInvalid home name. Use only letters, numbers, and underscores."
+  too-many-homes: "&cYou have too many homes."
+  home-already-exists: "&cA home with that name already exists."
+  
+  # General Messages
+  cooldown-blocked: "❌ PvP cooldown – wait %time%ss"
+
+# Sound Configuration (when sounds-enabled is true)
+sounds:
+  request-sent: "BLOCK_NOTE_BLOCK_HARP"
+  request-received: "BLOCK_NOTE_BLOCK_PLING"
+  request-accepted: "BLOCK_NOTE_BLOCK_CHIME"
+  request-denied: "BLOCK_NOTE_BLOCK_BASS"
+  teleport-warmup: "BLOCK_NOTE_BLOCK_BELL"
+  teleport-complete: "ENTITY_ENDERMEN_TELEPORT"
+  
+# Combat Logging (optional - logs PvP interactions to console)
+log-combat: false
